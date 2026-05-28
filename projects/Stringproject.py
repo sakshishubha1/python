@@ -43,6 +43,45 @@ def comp(name):
     
  
 while True:
-    choice=int(input("What choice do you want ? 1="))
+    name=input("Enter word ")
+    choice=int(input("What choice do you want with your word ? 1. Convert to Uppercase 2. Convert to Lowercase 3. Count a Character 4. Replace Word 5. Find Character Position 6. Split Sentence 7. Check Startswith 8. Check Endswith 9. Compare Two Strings   10. Length of String 11. Exit"))
+    if choice==1:
+        upper(name)
+    elif choice==2:
+        lower(name)
+    elif choice==3:
+        count(name)
+    elif choice==4:
+        replace(name)
+    elif choice==5:
+        position(name)
+    elif choice==6:
+        split(name)
+    elif choice==7:
+        start(name)
+    elif choice==8:
+        end(name)
+    elif choice==9:
+        comp(name)
+    elif choice==10:
+        length(name)
+    elif choice==11:
+        print("program terminated")
+        break
+    if choice>11 or choice<1:
+        print("Wrong choice")
+        continue
 
+
+     
+    
+
+
+
+
+
+
+
+        
+    
 
