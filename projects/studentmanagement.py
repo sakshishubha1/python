@@ -17,5 +17,17 @@ while True:
     elif(choice==3):
         newname=int(input("Enter new name"))
         student["name"]=newname
+    elif(choice==4):
+        field=input("Enter what field you want to add")
+        value=int(input("Enter value you want to add "))
+        student["field"]=value
+    elif(choice==5):
+        field1=input("Enter field to delete")
+        del student[field1]
+
+    elif(choice==6):
+        search=input("Enter field you want to search")
+        1
     
+
 
