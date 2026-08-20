@@ -17,4 +17,6 @@ def maximum(number):
 def minimum(number):
     print("the minimum number is",min(number))
 
-def
+def avg(number)
+    print("the average is ",sum(number)/len(number))
+    
