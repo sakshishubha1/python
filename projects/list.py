@@ -24,3 +24,9 @@ def sort(number):
     print("the sorted version is")
     for num in number:
         print(num)
+
+def reverse(number):
+    number.reverse()
+    prin("the reversed list is ")
+    for num in number:
+        print(num)
