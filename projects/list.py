@@ -30,3 +30,12 @@ def reverse(number):
     prin("the reversed list is ")
     for num in number:
         print(num)
+
+def search(number):
+    search=int(input("enter number to find"))
+    if search in number:
+        print("number found")
+
+
+
+
