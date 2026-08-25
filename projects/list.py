@@ -36,6 +36,9 @@ def search(number):
     if search in number:
         print("number found")
 
+def count(number):
+    print("the number of numbers in list is ",len(number))
+
 
 
 
