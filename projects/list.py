@@ -39,6 +39,16 @@ def search(number):
 def count(number):
     print("the number of numbers in list is ",len(number))
 
+while True:
+    number=[]
+    range=int(input("how many numbers you want to add in in list initially?"))
+    for i in range (range):
+        num=int(input("enter number"))
+        number.append(num)
 
+    choice=int(input("enter what you want to do 1=add,2=view,3=remove,4=largest number,5=smallest number,6-sum,7-avg,8-sort,9-reverse,10-search number,11=count numbers"))
+    if choice==1:
+        
+   
 
 
