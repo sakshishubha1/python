@@ -27,7 +27,7 @@ def sort(number):
 
 def reverse(number):
     number.reverse()
-    prin("the reversed list is ")
+    print("the reversed list is ")
     for num in number:
         print(num)
 
@@ -48,7 +48,17 @@ while True:
 
     choice=int(input("enter what you want to do 1=add,2=view,3=remove,4=largest number,5=smallest number,6-sum,7-avg,8-sort,9-reverse,10-search number,11=count numbers"))
     if choice==1:
+        add(number)
+    elif choice==2:
         
-   
+        view(number)
+    elif choice==3:
+        remove(number)
+    elif choice==4:
+
+    
+     
+
+
 
 
