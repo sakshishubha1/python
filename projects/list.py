@@ -1,5 +1,5 @@
 def add(number):
-    add=int(input(enter number to add))
+    add=int(input("enter number to add"))
     number.append(add)
 
 def view(number):
@@ -7,8 +7,12 @@ def view(number):
         print(num) 
 
 def remove(number):
-    erase=int(inpt("enter number you want to delete"))
-    number.delete(remove)
+    erase=int(input("enter number you want to delete"))
+    if erase in number:
+         number.remove(erase)
+    else:
+        print("number not found")
+   
 
 def maximum(number):
     print("the max of number is ",max(number))
@@ -39,24 +43,44 @@ def search(number):
 def count(number):
     print("the number of numbers in list is ",len(number))
 
-while True:
-    number=[]
-    range=int(input("how many numbers you want to add in in list initially?"))
-    for i in range (range):
-        num=int(input("enter number"))
-        number.append(num)
-
-    choice=int(input("enter what you want to do 1=add,2=view,3=remove,4=largest number,5=smallest number,6-sum,7-avg,8-sort,9-reverse,10-search number,11=count numbers"))
-    if choice==1:
-        add(number)
-    elif choice==2:
-        
-        view(number)
-    elif choice==3:
-        remove(number)
-    elif choice==4:
-
+def s(number):
+    sum1=sum(number)
+    print("the sum is ",sum1)
     
+
+
+    number=[]
+while True:
+    choice = int(input("""1=add, 2=view, 3=remove, 4=max, 5=min,6=sum, 7=avg, 8=sort, 9=reverse,10=search, 11=count, 12=exit: """))
+    if choice == 1:
+        add(number)
+    elif choice == 2:
+        view(number)
+    elif choice == 3:
+        remove(number)
+    elif choice == 4:
+        maximum(number)
+    elif choice == 5:
+        minimum(number)
+    elif choice == 6:
+        s(number)
+    elif choice == 7:
+        avg(number)
+    elif choice == 8:
+        sort(number)
+    elif choice == 9:
+        reverse(number)
+    elif choice == 10:
+        search(number)
+    elif choice == 11:
+        count(number)
+    elif choice == 12:
+        print("Program terminated")
+        break
+    
+
+
+
      
 
 
