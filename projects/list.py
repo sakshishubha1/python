@@ -49,7 +49,7 @@ def s(number):
     
 
 
-    number=[]
+number=[]
 while True:
     choice = int(input("""1=add, 2=view, 3=remove, 4=max, 5=min,6=sum, 7=avg, 8=sort, 9=reverse,10=search, 11=count, 12=exit: """))
     if choice == 1:
